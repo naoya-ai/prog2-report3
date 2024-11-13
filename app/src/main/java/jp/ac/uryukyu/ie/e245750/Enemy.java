@@ -55,28 +55,67 @@ public class Enemy {
             System.out.printf("モンスター%sは倒れた。\n", name);
         }
     }
+
+    /**
+     * モンスターの名前を取得するメソッド。
+     * @return　モンスターの名前
+     */
     public String getName(){
         return name;
     }
+
+    /**
+     * モンスターのHPを取得するメソッド。
+     * @return　モンスターのHP
+     */
     public int getHitPoint(){
         return hitPoint;
     }
+
+    /**
+     * モンスターの攻撃力を取得するメソッド。
+     * @return　モンスターの攻撃力
+     */
     public int getAttack(){
         return attack;
     }
+
+    /**
+     * モンスターの生死状態を取得するメソッド。true = 死亡
+     * @return　モンスターの生死状態
+     */
     public boolean getDead(){
         return dead;
     }
 
+    /**
+     * モンスターの名前を設定するメソッド。
+     * @param name　敵の名前
+     */
     public void setName(String name){
         this.name = name;
     }
+
+    /**
+     * モンスターのHPを設定するメソッド。
+     * @param hitPoint　敵の攻撃力
+     */
     public void setHitPoint(int hitPoint){
         this.hitPoint = hitPoint;
     }
+
+    /**
+     * モンスターの攻撃力を設定するメソッド。
+     * @param attack　敵の攻撃力
+     */
     public void setAttack(int attack){
         this.attack = attack;
     }
+    
+    /**
+     * モンスターの生死状態を設定するメソッド。true = 死亡
+     * @param dead　敵の生死状態
+     */
     public void setDead(boolean dead){
         this.dead = dead;
     }

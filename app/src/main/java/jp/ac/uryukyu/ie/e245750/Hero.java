@@ -51,29 +51,59 @@ public class Hero {
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
     }
-
+    /**
+     * ヒーローの名前を取得するメソッド。
+     * @return ヒーローの名前
+     */
     public String getName(){
         return name;
     }
+    /**
+     * ヒーローのHPを取得するメソッド。
+     * @return　ヒーローのHP
+     */
     public int getHitPoint(){
         return hitPoint;
     }
+    /**
+     * ヒーローの攻撃力を取得するメソッド。
+     * @return　ヒーローの攻撃力
+     */
     public int getAttack(){
         return attack;
     }
+    /**
+     * ヒーローの生死状態を取得するメソッド。　true = 死亡
+     * @return　ヒーローの生死状態
+     */
     public boolean getDead(){
         return dead;
     }
-
+    /**
+     * ヒーローの名前を設定するメソッド。
+     * @param name　ヒーローの名前
+     */
     public void setName(String name){
         this.name = name;
     }
+    /**
+     * ヒーローのHPを設定するメソッド。
+     * @param hitPoint　ヒーローのHP
+     */
     public void setHitPoint(int hitPoint){
         this.hitPoint = hitPoint;
     }
+    /**
+     * ヒーローの攻撃力を設定するメソッド。
+     * @param attack　ヒーローの攻撃力
+     */
     public void setAttack(int attack){
         this.attack = attack;
     }
+    /**
+     * ヒーローの生死状態を設定するメソッド。true = 死亡
+     * @param dead　ヒーローの生死状態　
+     */
     public void setDead(boolean dead){
         this.dead = dead;
     }
