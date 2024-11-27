@@ -1,12 +1,7 @@
-
-
-import jp.ac.uryukyu.ie.e245750.Enemy;
-import jp.ac.uryukyu.ie.e245750.Hero;
-import jp.ac.uryukyu.ie.e245750.Warrior;
-
+package jp.ac.uryukyu.ie.e245750;
 public class Main2 {
     public static void main(String[] args){
-        Hero hero = new Warrior("勇者", 10, 5); // (a)
+        Hero hero = new Warrior ("勇者", 10, 5); // (a)
         Enemy enemy = new Enemy("スライム", 6, 3);
 
         System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());
@@ -18,6 +13,7 @@ public class Main2 {
             hero.attack(enemy); // (b)
             enemy.attack(hero);
         }
+        System.out.println(hero);
         System.out.println("戦闘終了");
     }
 }
