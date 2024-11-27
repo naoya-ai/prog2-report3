@@ -1,8 +1,11 @@
-package jp.ac.uryukyu.ie.e245750;
+
+
+import jp.ac.uryukyu.ie.e245750.Enemy;
+import jp.ac.uryukyu.ie.e245750.Warrior;
 
 public class Main {
     public static void main(String[] args){
-        Warrior warrior = new Warrior("勇者", 10,6);
+        Warrior warrior = new Warrior("勇者", 10,12);
         Enemy enemy = new Enemy("スライム", 10, 3);
 
         System.out.printf("%s vs. %s\n", warrior.getName(), enemy.getName());

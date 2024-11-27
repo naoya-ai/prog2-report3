@@ -19,14 +19,4 @@ public class Hero extends LivingThing {
         super(name, hitPoint, attack);
     }
 
-    /**
-     * 自身へ攻撃されたときのダメージ処理をするメソッド。
-     * 指定されたダメージを hitPoint から引き、死亡判定を行う。
-     * @param damage 受けたダメージ
-     */
-    @Override
-    public void wounded(int damage){
-        super.wounded(damage);
-    }
-
 }

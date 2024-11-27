@@ -40,6 +40,10 @@ public class LivingThing {
     public void attack(LivingThing opponent) {
         if(getHitPoint() >= 0){
             int damage = (int) (Math.random() * attack);
+            if (opponent.isDead()) {
+                System.out.printf("%sは既に倒れているため攻撃できません。\n", opponent.getName());
+                return;
+            }
             System.out.printf("%sの攻撃！%sに%dのダメージを与えた！\n", name, opponent.getName(), damage);
             opponent.wounded(damage);
         }
