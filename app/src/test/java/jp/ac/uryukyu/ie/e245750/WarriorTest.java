@@ -1,15 +1,19 @@
 package jp.ac.uryukyu.ie.e245750;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 public class WarriorTest {
     @Test
     public void testWithWeaponSkill(){
-        Warrior warrior = new Warrior("勇者", 100, 10);
-        Enemy enemy = new Enemy("モンスター", 100, 10);
+        int defaultEnemyHp = 100;
+        Warrior warrior = new Warrior("勇者", 100, 20);
+        Enemy enemy = new Enemy("モンスター", defaultEnemyHp, 10);
         
         for (int i = 1; i <= 3; i++) {
-            System.out.printf("%d回目の攻撃:", i);
+            int expectedHp = (int) (defaultEnemyHp - warrior.getAttack() * 1.5 * i);
             warrior.attackWithWeaponSkill(enemy);
+            assertEquals(expectedHp,enemy.getHitPoint());
         }
     }
 }
